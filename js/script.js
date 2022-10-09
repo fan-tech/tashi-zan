@@ -232,7 +232,7 @@ submitBtn.addEventListener('click', () => {
       submitBtn.style.display = 'none';
       GC.style.display = 'none';
       resultContainer.style.fontSize = '30px';
-      resultContainer.style.marginTop="250px"
+      resultContainer.style.marginTop="150px"
       backBtn.style.display = 'block';
       A.value = '';
     }
@@ -281,4 +281,5 @@ backBtn.addEventListener('click', () => {
   mainGameArea.style.display = 'none';
   levelChoice.style.display = 'block';
   backBtn.style.display = 'none';
+  A.value = '';
 });
