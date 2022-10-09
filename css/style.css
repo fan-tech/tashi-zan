@@ -234,7 +234,7 @@ text-align: center;
 	/* 959px以下に適用されるCSS（タブレット用） */
    #mainGameArea {
   display                         : none;
-  width                           : 380px;
+  width                           : 300px;
   /* ↓easy 300px,normal 390px,hard:550px */
   height                          : 500px;
   box-sizing                      : border-box;
@@ -260,7 +260,7 @@ font-size: 50px;
 	/* 480px以下に適用されるCSS（スマホ用） */
   #mainGameArea {
   display                         : none;
-  width                           : 380px;
+  width                           : 300px;
   /* ↓easy 300px,normal 390px,hard:550px */
   height                          : 500px;
   box-sizing                      : border-box;
