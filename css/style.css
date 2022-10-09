@@ -232,6 +232,29 @@ text-align: center;
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
+   #mainGameArea {
+  display                         : none;
+  width                           : 380px;
+  /* ↓easy 300px,normal 390px,hard:550px */
+  height                          : 500px;
+  box-sizing                      : border-box;
+  border-radius                   : 32px;
+  border                          : 6px solid white;
+  background                      : #F9d2d4;
+  }
+
+#numArea{
+  display: flex;
+font-size: 50px;
+justify-content: center;
+margin-top:100px;
+}
+
+#textarea{
+width:55px;
+height: 55px;
+font-size: 50px;
+}
 }
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
