@@ -1,0 +1,231 @@
+body {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  background     : #FEEAB4;
+  font-size      : 25px;
+  font-family    : 'メイリオ', sans-serif;
+  color          : #707070;
+  user-select    : none;
+}
+
+
+/* ゲームエリア */
+
+
+#mainGameArea {
+  display                         : none;
+  width                           : 600px;
+  /* ↓easy 300px,normal 390px,hard:550px */
+  height                          : 600px;
+  box-sizing                      : border-box;
+  border-radius                   : 32px;
+  border                          : 6px solid white;
+  background                      : #F9d2d4;
+	 position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+#numArea{
+  display: flex;
+font-size: 100px;
+justify-content: center;
+margin-top:100px;
+}
+
+#textarea{
+width:120px;
+height: 120px;
+font-size: 100px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance:textfield;
+}
+
+#resultContainer{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 30px;
+  font-size :50px;
+}
+
+/*  ポップアップ部分 */
+
+#levelChoice {
+  display           : block;
+  animation-name    : upToDown;
+  animation-duration: 2s;
+}
+
+.popup {
+  width        : 350px;
+  height       : 390px;
+  box-sizing   : border-box;
+  border-radius: 32px;
+  border       : 6px solid white;
+  background   : #B5D681;
+  position     : fixed;
+  top          : 50%;
+  left         : 50%;
+  margin-left  : -175px;
+  margin-top   : -195px;
+  font-size: 13px;
+}
+.levelChoiceBtns {
+  display        : flex;
+  justify-content: space-around;
+  margin-top     : 20px;
+}
+
+#startBtn {
+  width          : 140px;
+  height         : 60px;
+  border-radius  : 6px;
+  background     : white;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin         : 0 auto;
+  margin-top     : 20px;
+  cursor         : pointer;
+  user-select    : none;
+  pointer-events : none;
+  border:1px solid black;
+}
+.levelChoice-h1{
+text-align: center;
+}
+
+.description {
+  text-align: center;
+  font-size : 15px;
+  margin-top: 25px;
+}
+
+#errorMsg {
+  margin-top : 6px;
+  font-size  : 20px;
+  font-weight: bold;
+  color      : tomato;
+  display    : block;
+    text-align: center;
+}
+
+.levelChoice-text{
+  margin-top:20px;
+}
+
+
+#easyBtn {
+  display    : block;
+  width      : 100px;
+  height     : 50px;
+  font-size  : 15px;
+  font-weight: bold;
+  background : #BDBDBD;
+  text-align : center;
+  line-height: 50px;
+  cursor     : pointer;
+  user-select: none;
+  border:1px solid black;
+  }
+
+#normalBtn {
+  display    : block;
+  width      : 100px;
+  height     : 50px;
+  font-size  : 15px;
+  font-weight: bold;
+  background : #BDBDBD;
+  text-align : center;
+  line-height: 50px;
+  cursor     : pointer;
+  user-select: none;
+  border:1px solid black;
+}
+
+#hardBtn {
+  display    : block;
+  width      : 100px;
+  height     : 50px;
+  font-size  : 15px;
+  font-weight: bold;
+  background : #BDBDBD;
+  text-align : center;
+  line-height: 50px;
+  cursor     : pointer;
+  user-select: none;
+  border:1px solid black;
+}
+
+#backBtn {
+  width               : 250px;
+  height              : 50px;
+  line-height: 50px;
+  background          : white;
+  margin              : 0 auto;
+  /* ↓easy 50px normal:50px hard:20px*/
+  margin-top          : 50px;
+  box-sizing          : border-box;
+  border-radius       : 32px;
+  border              : 6px solid white;
+  position            : fixed;
+  top                 : 50%;
+  left                : 50%;
+  margin-left         : -125px;
+  /* easy 170px normal 200 hard 300 */
+  margin-top: 170px;
+  display   : block;
+  text-align: center;
+  cursor    : pointer;
+  border:1px solid black;
+}
+
+#submitBtn {
+  width               : 250px;
+  height              : 50px;
+  line-height: 50px;
+  background          : white;
+  margin              : 0 auto;
+  /* ↓easy 50px normal:50px hard:20px*/
+  margin-top          : 50px;
+  box-sizing          : border-box;
+  border-radius       : 32px;
+  border              : 6px solid white;
+  position            : fixed;
+  top                 : 50%;
+  left                : 50%;
+  margin-left         : -125px;
+  /* easy 170px normal 200 hard 300 */
+  margin-top: 100px;
+  display   : block;
+  text-align: center;
+  cursor    : pointer;
+  border:1px solid black;
+}
+
+
+
+  /* アニメーション */
+@keyframes upToDown {
+  0% {
+    opacity: 0;
+    /* 透明 */
+    transform: translateY(-250px);
+    /* X軸方向に50px */
+  }
+
+  100% {
+    opacity: 1;
+    /* 不透明 */
+    transform: translateY(0px);
+    /* X軸方向に0px */
+  }
+}

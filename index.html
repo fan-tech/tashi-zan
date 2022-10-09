@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タシザン！</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- メインゲームエリア -->
+    <section id="mainGameArea">
+      <div id="outside-nuｍ-area">
+        <div id="resultContainer">
+                  <div id="GC"></div>
+        <div id="result"></div>
+        </div>
+              <main id="numArea">
+          <div id="first">?</div>
+          <div id="plus">+</div>
+          <div id="second">?</div>
+          <divi id="equal">=</divi>
+          <div>
+            <input
+              type="tel"
+              maxlength="2"
+              id="textarea"
+              maxlength="2"
+              name="answer"
+            />
+          </div>
+        </main>
+        <div class="btn" id="submitBtn">
+          <div>こたえる</div>
+        </div>
+      <div class="btn" id="backBtn">
+        <div>もどる</div>
+      </div>
+    </section>
+    <!-- 難易度選択画面 -->
+    <section id="levelChoice" class="popup">
+      <main>
+        <div class="levelChoice-h1">
+          <h1>むずかしさをえらんでね</h1>
+        </div>
+        <div class="levelChoiceBtns">
+          <div id="easyBtn">かんたん</div>
+          <div id="normalBtn">ふつう</div>
+          <div id="hardBtn">むずかしい</div>
+        </div>
+        <div class="levelChoice-text">
+          <p>かんたん:こたえは、たして10になるまでのすうじです。</p>
+          <p>ふつう；こたえは、たして20になるまでのすうじです。</p>
+          <p>むずかしい：こたえは、たして30になるまでのすうじです。</p>
+        </div>
+        <p class="description">はじめるをおしてね！</p>
+        <div class="btn" id="startBtn">
+          <div>はじめる</div>
+        </div>
+        <p id="errorMsg">むずかしさをえらんでね！</p>
+      </main>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
